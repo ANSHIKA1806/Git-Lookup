@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Git-Lookup</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Git-Lookup</h1>  <!--Header-->
+    </div>
+    <form id="form" autocomplete="on" style="padding-left: 50px; padding-right:50px">
+        <div class="form-group"> <!--Search Bar-->
+            <input type="text" class="form-control" id="search" placeholder="Search for Github User">
+        </div>
+        <div class="form-group"> <!--Search Button-->
+            <button type="submit" class="btn btn-primary btn-block" >Search User</button>
+        </div>
+    </form>
+    <div id="result">  <!--Result of query-->
+        <h3>The user details are displayed here:</h3>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+</script>
+</body>
+</html>
