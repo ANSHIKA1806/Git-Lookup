@@ -1,0 +1,170 @@
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./IMG/background.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+/*Customized scrollbar */
+/* width */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(31, 30, 30);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 255, 255, 0.477);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(12, 12, 12);
+  border-radius: 10px;
+}
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+h4 {
+  color: black;
+}
+
+#result {
+  text-align: center;
+  background: linear-gradient(#55c0db,#71eda2, #55c0db);
+  width: 30em;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 22px;
+  margin-bottom: 100px;
+  margin-top: 30px;
+  cursor:default
+  
+}
+#result img {
+  border-radius: 50%;
+}
+#result li {
+  list-style: none;
+}
+
+#search {
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  width: 20em;
+  border: 1px solid black;
+}
+.header {
+  height: 10vh;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0px;
+  background-color: black;
+  box-shadow: 0 0 50px white;
+}
+#logo {
+  border-radius: 30%;
+  /* margin: 10px; */
+}
+
+h1 {
+  margin-left: 5px;
+  color: white;
+  text-shadow: 0 0 8px white;
+  letter-spacing: 10px;
+  cursor: default;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.wrapper {
+  background-color: rgba(0, 0, 0, 0.792);
+  min-height: 100vh;
+  width: 100vw;
+}
+#form {
+  margin-top: 3em;
+}
+.footer {
+  height: 7vh;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid black;
+  margin-top: 20px;
+  position: fixed;
+  bottom: 0px;
+  background-color: black;
+  box-shadow: 0 0 100px white;
+  color: white;
+  min-width: 100vw;
+  flex-wrap: wrap;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.footer a {
+  margin-left: 3px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s linear;
+}
+#avatar{
+  max-width: 300px;
+}
+.footer a:hover {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 10px;
+  transition: all 0.5s linear;
+}
+@media screen and (max-width: 430px) {
+  h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  #result{
+    width: 10em;
+
+  }
+  #avatar{
+    max-width: 100px;
+  }
+  #search {
+ 
+    width: 10em;
+ 
+  }
+  #result h3{
+    font-size: 20px;
+  }
+  #result li {
+    font-size: 10px;
+  }
+}
+@media screen and (max-height: 630px){
+h1{
+  font-size: 20px;
+}
+}
